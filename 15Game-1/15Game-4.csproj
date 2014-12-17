@@ -65,8 +65,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <None Include="angular.intellisense.js" />
     <Content Include="Board.aspx" />
     <Content Include="script.js" />
+    <Content Include="script_animation.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

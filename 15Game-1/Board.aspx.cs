@@ -26,7 +26,10 @@ namespace _15Game_1
               arrButtons[i].Attributes.Add("Onclick", "javascript:myClick(" + i.ToString() + ");return false;");
               arrButtons[i].Font.Size = new FontUnit("X-Large");
                arrButtons[i].Style["position"]="Absolute";
-               arrButtons[i].Width = 50;
+               arrButtons[i].Attributes.Add("ng-mousemove", "onMouseMove($event)");
+              // arrButtons[i].Attributes.Add("ng-model", "ButtonId");
+              // arrButtons[i].Attributes.Add("ng-click", "onSecondBtnClick(ButtonId)");
+              arrButtons[i].Width = 50;
                arrButtons[i].Height = 50;
 
               form1.Controls.Add( arrButtons[i]);
